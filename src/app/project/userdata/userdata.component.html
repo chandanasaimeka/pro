@@ -1,0 +1,80 @@
+<nav class="navbar navbar-expand-lg bg-warning">
+  <div class="container-fluid">
+    <a class="navbar-brand text-light" [routerLink]="['/homemain']">
+      <img src="https://th.bing.com/th/id/OIP.aFUA62GXzSVCvoHZp8-wxwHaHa?rs=1&pid=ImgDetMain" class="nav-img">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse  d-flex flex-row justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active text-dark" aria-current="page" [routerLink]="['/homemain']">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-dark" [routerLink]="['/userdata']">UserData</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active text-dark" [routerLink]="['/web']">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link activate text-dark" [routerLink]="['/homeweb']">
+            <img src="https://th.bing.com/th/id/OIP.i18S5hbENZf5sBwYOMm7UAHaHa?rs=1&pid=ImgDetMain"
+              class="img-c">Signup</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="d-flex flex-column justify-content-center">
+  <h1 class="text-danger text-center mt-4">Home data</h1>
+  <form [formGroup]="homeData" (ngSubmit)="submit1()">
+    <div class="container">
+      <div class="row ">
+        <div class="col card1">
+          <div class="mb-3 text-center">
+            <input type="text" class="form-control" formControlName="url" id="url"
+              placeholder="Enter image url of the house">
+          </div>
+          <div class="mb-3 text-center">
+            <input type="email" class="form-control" formControlName="mail" id="email" placeholder="Enter seller email">
+          </div>
+          <div class="mb-3 text-center">
+            <input type="text" class="form-control" formControlName="type" id="type"
+              placeholder="Enter type of the house">
+          </div>
+          <div class="mb-3 text-center">
+            <textarea class="form-control" formControlName="description" id="description"
+              placeholder="Enter Description of the house"></textarea>
+          </div>
+          <div class="mb-3 text-center">
+            <input type="text" class="form-control" formControlName="sqft" id="sqft"
+              placeholder="Enter SQFT of the house">
+          </div>
+          <div class="mb-3 text-center">
+            <input type="text" class="form-control" formControlName="sqftprice" id="sqftprice"
+              placeholder="Enter SQFT price of the house">
+          </div>
+          <div class="mb-3 text-center">
+            <input type="text" class="form-control" formControlName="gst" id="gst" placeholder="Enter GST of the house">
+          </div>
+          <div class="mb-3 text-center">
+            <input type="text" class="form-control" formControlName="price" id="price"
+              placeholder="Enter Price of the house">
+          </div>
+          <div class="mb-3 text-center">
+            <input type="text" class="form-control" formControlName="emi" id="emi" placeholder="Enter EMI of the house">
+          </div>
+
+          <div class="d-flex flex-row justify-content-center">
+
+            <button type="submit" class="btn btn-primary m-2">Submit</button>
+            <button type="submit" class="btn btn-primary m-2" [routerLink]="['/seller/:']">BACK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

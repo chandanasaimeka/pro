@@ -1,0 +1,42 @@
+
+<nav class="navbar navbar-expand-lg bg-warning">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light" [routerLink]="['/homemain']">
+        <img src="https://th.bing.com/th/id/OIP.aFUA62GXzSVCvoHZp8-wxwHaHa?rs=1&pid=ImgDetMain" class="nav-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse  d-flex flex-row justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active text-dark" aria-current="page" [routerLink]="['/homemain']">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-dark" [routerLink]="['/userdata']">UserData</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link activate text-dark" [routerLink]="['/homeweb']">
+              <img src="https://th.bing.com/th/id/OIP.i18S5hbENZf5sBwYOMm7UAHaHa?rs=1&pid=ImgDetMain" class="img-c">Signup</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="bg-1 d-flex flex-column justify-content-center">
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="d-flex flex-column justify-content-center">
+            <div class="card-1 text-center ">
+                <h1 class="text-light text-center">MY HOME WEB</h1>
+                <h3 class="tex">My Home Constructions Pvt. Ltd. is a reputed name in the Real Estate and Property Development segment of India. With the experience of around three decades, My Home Constructions Pvt. Ltd. today is a market leader and controller in all business divisions. They make it a good experience by stringing on six principles: Happy Communities, Superior Living, Clear Documentation, Timely Delivery, Desirable Destinations and Secure Environment.This Real Estate Company has introduced finest and latest policies and methods as well as techniques which aim to bring major changes in the field. The Group has completed number of important projects in most of the major towns and cities and has set up a glorious example for other builders to follow. All the residential complexes and buildings developed by this company are unique and dignified archetype of latest, royal and grand living.</h3>
+                <button class="btn btn-danger m-2" [routerLink]="['/updateform']">RENT</button>
+                <button class="btn btn-danger m-2"[routerLink]="['/inner']">BUY </button>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+  </div>

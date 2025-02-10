@@ -1,0 +1,26 @@
+
+<h1 class="text-center text-danger">Course Details</h1><p *ngFor="let a of courses" class="text-center">
+   <a href="javaScript.void(0)" (click)="redirectedToURL(courses.roll)">{{a.roll}}--{{a.name}}--{{a.sec}}</a>
+</p>
+<div class="container ">
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">SECTION</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let x of courses">
+                    <td>{{x.roll}}</td>
+                    <td>{{x.name}}</td>
+                    <td>{{x.sec}}</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+.bg1{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+.card2
+{background-image:linear-gradient(white,pink,white);
+    height: 70vh;
+    width: 45vw;
+    border-top-left-radius:25px;
+    border-bottom-left-radius:25px;
+    padding: 110px;
+}
+.card1{
+    background-image:linear-gradient(#7f7fd5,#91eae4);
+    height: 70vh;
+    font-weight:bold;
+    font-size:30px;
+    width: 40vw;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+h1
+{
+    font-weight: bold;
+}
+.a{
+    text-decoration:none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.size{
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    padding-right: 3px;
+}
+.fontse
+{
+    font-size: 45px;
+    padding: 8px;
+}
+img{
+    border-radius: 100px;
+    margin-right:10px;
+}
+.b-align
+{
+    margin-right: 15px;
+}

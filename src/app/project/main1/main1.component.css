@@ -1,0 +1,33 @@
+.nav-img
+{
+    height: 45px;
+    width:45px;
+    border-radius:10px ;
+}
+.img-c
+{
+    height: 25px;
+    width: 25px;
+    border-radius: 15px;
+    margin-right: 4px;
+}
+.bg-1
+{
+    background-image: url('https://th.bing.com/th/id/OIP.s4CwJKFzN0gCtPpazHwKeAAAAA?rs=1&pid=ImgDetMain');
+    background-size: cover;
+    height: 100%;
+}
+.card-1
+{
+    margin-left: 50px;
+    background-color: transparent;
+    height: 70vh;
+    width: 70vw;
+    
+
+}
+.tex
+{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}

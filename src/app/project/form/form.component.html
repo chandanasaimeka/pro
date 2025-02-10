@@ -1,0 +1,109 @@
+<div class="s">
+  <h1 class="text-center text-size p-3">WELCOME TO HOMESITE</h1>
+  <div class=" d-flex flex-column justify-content-center text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex flex-row justify-content-center">
+          <div class="card1 col-12 col-sm-12 col-lg-12 col-md-12 col-xl-12">
+            <h1 class="text-light text-size">CREATE USER</h1>
+            <div class="container">
+              <div class="row d-flex flex-row justify-content-center">
+                <div class="col">
+                  <div class="input-group mb-2 ">
+                    <select #option (change)="onSelected(option.value)" class="form-select" id="inputGroupSelect01">
+                      <option selected value="other">other</option>
+                      <option value="buyers">Buyer</option>
+                      <option value="sellers">Seller</option>
+                    </select>
+                  </div>
+
+                  <div *ngIf="selectoption=='buyers'" class="mt-4">
+                    <form [formGroup]="registrationFrom" (ngSubmit)="signUp()">
+
+
+                      <div class="mb-3 text-center">
+                        <input type="text" class="form-control" formControlName="fname" id="exampleFormControlInput1"
+                          placeholder="Enter user first  Name">
+                      </div>
+                      <div class="mb-3 text-center">
+                        <input type="text" class="form-control" formControlName="lname" id="exampleFormControlInput2"
+                          placeholder="Enter user last name">
+
+                      </div>
+                      <div class="mb-3 text-center">
+                        <input type="email" class="form-control" formControlName="email" id="exampleFormControlInput3"
+                          placeholder="Enter user mail">
+                      </div>
+                      <div class="mb-3 text-center">
+                        <input type="text" class="form-control" formControlName="mobile" id="exampleFormControlInput4"
+                          placeholder="Enter user mobile number">
+                      </div>
+                      <div class="mb-3 text-center">
+                        <input type="text" class="form-control" formControlName="username" id="exampleFormControlInput5"
+                          placeholder="Enter user username">
+                      </div>
+                      <div class="mb-3 text-center">
+                        <input type="password" class="form-control" formControlName="password"
+                          id="exampleFormControlInput6" placeholder="Enter user password">
+                      </div>
+                      <div>
+                        <button class="btn btn-primary m-1" type="submit">SIGN UP</button>
+                      </div>
+                      <div>
+                        IF YOU HAVE ALREADY ACCOUNT PLEASE <a [routerLink]="['/web']">SIGNIN</a>
+                      </div>
+                    </form>
+                  </div>
+                    
+
+                  <div *ngIf="selectoption=='sellers'">
+
+                    <form [formGroup]="sellerFrom" (ngSubmit)="sellersignUp()">
+
+                      <div class="mb-3 text-center">
+                        <input type="text" class="form-control" formControlName="s_Fname" id="exampleFormControlInput11"
+                          placeholder="Enter seller first  Name">
+                      </div>
+                      <div class="mb-3 text-center">
+                        <input type="text" class="form-control" formControlName="s_LName" id="exampleFormControlInput22"
+                          placeholder="Enter seller last name">
+                      </div>
+                      <div class="mb-3 text-center">
+                        <input type="email" class="form-control" formControlName="s_Email"
+                          id="exampleFormControlInput33" placeholder="Enter seller   mail">
+                      </div>
+                      <div class="mb-3 text-center">
+                        <input type="text" class="form-control" formControlName="s_Mobile"
+                          id="exampleFormControlInput44" placeholder="Enter seller   mobile number">
+                      </div>
+                      <div class="mb-3 text-center">
+                        <input type="text" class="form-control" formControlName="s_Username"
+                          id="exampleFormControlInput55" placeholder="Enter seller  username">
+                      </div>
+                      <div class="mb-3 text-center">
+                        <input type="password" class="form-control" formControlName="s_Password"
+                          id="exampleFormControlInput66" placeholder="Enter seller password">
+                      </div>
+                      <div>
+                        <button class="btn btn-primary m-1" type="submit">SIGN UP</button>
+                      </div>
+                      <div>
+                        IF YOU HAVE ALREADY ACCOUNT PLEASE <a [routerLink]="['/web']">SIGNIN</a>
+                      </div>
+                    </form>
+                  </div>
+                  <div>
+                    <div *ngIf="selectoption=='other'">
+                      <button class="btn btn-primary m-1" [routerLink]="['/web']">Back</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
